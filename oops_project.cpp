@@ -168,7 +168,7 @@ int main() {
             int ticketNumber;
             bool found = false;
             cin >> ticketNumber;
-            for (auto &i : tickets) { // Pass by reference
+            for (auto &i : tickets) { 
                 if (i.getTicketNumber() == ticketNumber) {
                     i.editTicket();
                     found = true;
